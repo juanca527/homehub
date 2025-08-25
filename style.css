@@ -1,0 +1,8 @@
+/* Custom styles complementing Tailwind */
+body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+#bgIllustration { background-repeat: no-repeat; }
+
+/* small responsive tweaks */
+@media (max-width: 768px) {
+  header .logo { font-size: 1.25rem; }
+}
