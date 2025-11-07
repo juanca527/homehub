@@ -1,6 +1,6 @@
 // Shared logic for HomeHub multi-page prototype
 const HH = (function(){
-  // Default data
+  // Default data kl
   const DEFAULT_SERVICES = [
     { id: 's1', name: 'Aseo general (casa pequeña)', price: 25000, approxTime: '2 h' },
     { id: 's2', name: 'Aseo profundo', price: 45000, approxTime: '4 h' },
