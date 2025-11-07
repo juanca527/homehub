@@ -10,11 +10,8 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                // 1. Ejecutar las pruebas del proyecto de Blazor
-                sh 'dotnet test MiApp.Client.Tests/MiApp.Client.Tests.csproj'
-                
-                // 2. Ejecutar las pruebas del proyecto .NET Core/Standard adicional (por ejemplo, la capa de servicios)
-                sh 'dotnet test MiApp.Core.Tests/MiApp.Core.Tests.csproj' // **DEBES REEMPLAZAR LA RUTA**
+                // Comando para ejecutar pruebas de .NET, incluyendo las de Blazor (usando xUnit, bUnit, NUnit, etc.)
+                sh 'dotnet test' 
                 
                 echo 'Pruebas de test ejecutadas con éxito.'
             }
@@ -27,3 +24,4 @@ pipeline {
         }
     }
 }
+
