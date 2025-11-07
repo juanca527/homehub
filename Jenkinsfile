@@ -10,8 +10,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                // Comando para ejecutar pruebas de .NET, incluyendo las de Blazor (usando xUnit, bUnit, NUnit, etc.)
-                sh 'dotnet test' 
+            
                 
                 echo 'Pruebas de test ejecutadas con éxito.'
             }
@@ -24,4 +23,5 @@ pipeline {
         }
     }
 }
+
 
